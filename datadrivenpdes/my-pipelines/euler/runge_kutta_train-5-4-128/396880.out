@@ -1,0 +1,4041 @@
+tf.__version__ = 1.15.0
+tf.keras.__version__ = 2.2.4-tf
+Num GPUs Available:  1
+
+
+ stencil_size = 5, num_layers = 4, filters = 128 
+
+
+
+
+ NUM_TIME_STEPS = 10 
+
+
+
+ model_nn.learned_keys = {'y_momentum_edge_x', 'density_edge_y', 'x_momentum_edge_y', 'x_momentum_edge_x', 'y_momentum_edge_y', 'energy_edge_x', 'energy_edge_y', 'density_edge_x'}
+
+ model_nn.fixed_keys = {'energy', 'y_momentum', 'x_momentum', 'density'}
+
+
+ num_epochs = 2 
+
+
+
+ factor_density = 1.2
+
+ factor_velocity = 0.1 
+
+weights[0].shape = (3, 3, 4, 128)
+weights[1].shape = (128,)
+weights[2].shape = (3, 3, 128, 128)
+weights[3].shape = (128,)
+weights[4].shape = (3, 3, 128, 128)
+weights[5].shape = (128,)
+weights[6].shape = (3, 3, 128, 152)
+weights[7].shape = (152,)
+
+ learning_rate = 1.00e-04 
+
+
+ batch_size = 32 
+
+loss_value == 0.22371475398540497
+
+ Batch 0 finished 
+
+loss_value == 0.1520514339208603
+
+ Batch 1 finished 
+
+loss_value == 0.12437135726213455
+
+ Batch 2 finished 
+
+loss_value == 0.10950390994548798
+
+ Batch 3 finished 
+
+loss_value == 0.09895815700292587
+
+ Batch 4 finished 
+
+loss_value == 0.09942150115966797
+
+ Batch 5 finished 
+
+loss_value == 0.09704700112342834
+
+ Batch 6 finished 
+
+loss_value == 0.09417413920164108
+
+ Batch 7 finished 
+
+loss_value == 0.0940902829170227
+
+ Batch 8 finished 
+
+loss_value == 0.09101798385381699
+
+ Batch 9 finished 
+
+loss_value == 0.08511689305305481
+
+ Batch 10 finished 
+
+loss_value == 0.08937983214855194
+
+ Batch 11 finished 
+
+loss_value == 0.08423634618520737
+
+ Batch 12 finished 
+
+loss_value == 0.07931466400623322
+
+ Batch 13 finished 
+
+loss_value == 0.08058569580316544
+
+ Batch 14 finished 
+
+loss_value == 0.07641734927892685
+
+ Batch 15 finished 
+
+loss_value == 0.07648191601037979
+
+ Batch 16 finished 
+
+loss_value == 0.0730237364768982
+
+ Batch 17 finished 
+
+loss_value == 0.07040101289749146
+
+ Batch 18 finished 
+
+loss_value == 0.07147124409675598
+
+ Batch 19 finished 
+
+loss_value == 0.07031773030757904
+
+ Batch 20 finished 
+
+loss_value == 0.07373552024364471
+
+ Batch 21 finished 
+
+loss_value == 0.06963986158370972
+
+ Batch 22 finished 
+
+loss_value == 0.0709228515625
+
+ Batch 23 finished 
+
+loss_value == 0.06838573515415192
+
+ Batch 24 finished 
+
+loss_value == 0.06782986223697662
+
+ Batch 25 finished 
+
+loss_value == 0.06549257040023804
+
+ Batch 26 finished 
+
+loss_value == 0.06638137996196747
+
+ Batch 27 finished 
+
+loss_value == 0.06666917353868484
+
+ Batch 28 finished 
+
+loss_value == 0.0636281669139862
+
+ Batch 29 finished 
+
+loss_value == 0.061810579150915146
+
+ Batch 30 finished 
+
+loss_value == 0.061921145766973495
+
+ Batch 31 finished 
+
+loss_value == 0.06603739410638809
+
+ Batch 32 finished 
+
+loss_value == 0.06616345047950745
+
+ Batch 33 finished 
+
+loss_value == 0.05677693337202072
+
+ Batch 34 finished 
+
+loss_value == 0.06810999661684036
+
+ Batch 35 finished 
+
+loss_value == 0.05817916616797447
+
+ Batch 36 finished 
+
+loss_value == 0.06399737298488617
+
+ Batch 37 finished 
+
+loss_value == 0.062169987708330154
+
+ Batch 38 finished 
+
+loss_value == 0.061544399708509445
+
+ Batch 39 finished 
+
+loss_value == 0.05804232880473137
+
+ Batch 40 finished 
+
+loss_value == 0.057906270027160645
+
+ Batch 41 finished 
+
+loss_value == 0.05580680072307587
+
+ Batch 42 finished 
+
+loss_value == 0.05526820570230484
+
+ Batch 43 finished 
+
+loss_value == 0.054370153695344925
+
+ Batch 44 finished 
+
+loss_value == 0.05953391641378403
+
+ Batch 45 finished 
+
+loss_value == 0.056083645671606064
+
+ Batch 46 finished 
+
+loss_value == 0.0564035102725029
+
+ Batch 47 finished 
+
+loss_value == 0.0572410523891449
+
+ Batch 48 finished 
+
+loss_value == 0.05791206657886505
+
+ Batch 49 finished 
+
+loss_value == 0.05500061810016632
+
+ Batch 50 finished 
+
+loss_value == 0.05279732495546341
+
+ Batch 51 finished 
+
+loss_value == 0.05480917915701866
+
+ Batch 52 finished 
+
+loss_value == 0.050625063478946686
+
+ Batch 53 finished 
+
+loss_value == 0.05289037525653839
+
+ Batch 54 finished 
+
+loss_value == 0.05272024869918823
+
+ Batch 55 finished 
+
+loss_value == 0.05086829885840416
+
+ Batch 56 finished 
+
+loss_value == 0.05221586301922798
+
+ Batch 57 finished 
+
+loss_value == 0.05485641583800316
+
+ Batch 58 finished 
+
+loss_value == 0.05272628366947174
+
+ Batch 59 finished 
+
+loss_value == 0.05031844973564148
+
+ Batch 60 finished 
+
+loss_value == 0.05214732140302658
+
+ Batch 61 finished 
+
+loss_value == 0.045941393822431564
+
+ Batch 62 finished 
+
+loss_value == 0.05018017441034317
+
+ Batch 63 finished 
+
+loss_value == 0.04715781286358833
+
+ Batch 64 finished 
+
+loss_value == 0.049520742148160934
+
+ Batch 65 finished 
+
+loss_value == 0.04621525853872299
+
+ Batch 66 finished 
+
+loss_value == 0.0465657040476799
+
+ Batch 67 finished 
+
+loss_value == 0.04959942027926445
+
+ Batch 68 finished 
+
+loss_value == 0.043743886053562164
+
+ Batch 69 finished 
+
+loss_value == 0.049935728311538696
+
+ Batch 70 finished 
+
+loss_value == 0.046988941729068756
+
+ Batch 71 finished 
+
+loss_value == 0.04535423219203949
+
+ Batch 72 finished 
+
+loss_value == 0.047350507229566574
+
+ Batch 73 finished 
+
+loss_value == 0.04606802389025688
+
+ Batch 74 finished 
+
+loss_value == 0.04589065909385681
+
+ Batch 75 finished 
+
+loss_value == 0.044526465237140656
+
+ Batch 76 finished 
+
+loss_value == 0.04736732691526413
+
+ Batch 77 finished 
+
+loss_value == 0.045755479484796524
+
+ Batch 78 finished 
+
+loss_value == 0.049292728304862976
+
+ Batch 79 finished 
+
+loss_value == 0.04855000972747803
+
+ Batch 80 finished 
+
+loss_value == 0.043149299919605255
+
+ Batch 81 finished 
+
+loss_value == 0.04192505031824112
+
+ Batch 82 finished 
+
+loss_value == 0.041082143783569336
+
+ Batch 83 finished 
+
+loss_value == 0.04309125244617462
+
+ Batch 84 finished 
+
+loss_value == 0.046202294528484344
+
+ Batch 85 finished 
+
+loss_value == 0.044700514525175095
+
+ Batch 86 finished 
+
+loss_value == 0.04475756734609604
+
+ Batch 87 finished 
+
+loss_value == 0.040598902851343155
+
+ Batch 88 finished 
+
+loss_value == 0.047789741307497025
+
+ Batch 89 finished 
+
+loss_value == 0.04557667672634125
+
+ Batch 90 finished 
+
+loss_value == 0.0436323881149292
+
+ Batch 91 finished 
+
+loss_value == 0.0456824004650116
+
+ Batch 92 finished 
+
+loss_value == 0.045413821935653687
+
+ Batch 93 finished 
+
+loss_value == 0.04397786408662796
+
+ Batch 94 finished 
+
+loss_value == 0.038937535136938095
+
+ Batch 95 finished 
+
+loss_value == 0.041287925094366074
+
+ Batch 96 finished 
+
+loss_value == 0.040988944470882416
+
+ Batch 97 finished 
+
+loss_value == 0.04009038582444191
+
+ Batch 98 finished 
+
+loss_value == 0.041622668504714966
+
+ Batch 99 finished 
+
+loss_value == 0.04079388082027435
+
+ Batch 100 finished 
+
+loss_value == 0.040681902319192886
+
+ Batch 101 finished 
+
+loss_value == 0.039189212024211884
+
+ Batch 102 finished 
+
+loss_value == 0.04527857527136803
+
+ Batch 103 finished 
+
+loss_value == 0.04132762551307678
+
+ Batch 104 finished 
+
+loss_value == 0.043736934661865234
+
+ Batch 105 finished 
+
+loss_value == 0.0400657020509243
+
+ Batch 106 finished 
+
+loss_value == 0.039429642260074615
+
+ Batch 107 finished 
+
+loss_value == 0.042215075343847275
+
+ Batch 108 finished 
+
+loss_value == 0.040442969650030136
+
+ Batch 109 finished 
+
+loss_value == 0.04257744550704956
+
+ Batch 110 finished 
+
+loss_value == 0.043423883616924286
+
+ Batch 111 finished 
+
+loss_value == 0.041393958032131195
+
+ Batch 112 finished 
+
+loss_value == 0.04234324023127556
+
+ Batch 113 finished 
+
+loss_value == 0.03941495344042778
+
+ Batch 114 finished 
+
+loss_value == 0.037681154906749725
+
+ Batch 115 finished 
+
+loss_value == 0.03876711428165436
+
+ Batch 116 finished 
+
+loss_value == 0.039972998201847076
+
+ Batch 117 finished 
+
+loss_value == 0.04228535667061806
+
+ Batch 118 finished 
+
+loss_value == 0.03931844234466553
+
+ Batch 119 finished 
+
+loss_value == 0.039128825068473816
+
+ Batch 120 finished 
+
+loss_value == 0.04026435688138008
+
+ Batch 121 finished 
+
+loss_value == 0.0404643751680851
+
+ Batch 122 finished 
+
+loss_value == 0.0406506322324276
+
+ Batch 123 finished 
+
+loss_value == 0.04083530604839325
+
+ Batch 124 finished 
+
+loss_value == 0.0392509363591671
+
+ Batch 125 finished 
+
+loss_value == 0.041185371577739716
+
+ Batch 126 finished 
+
+loss_value == 0.04138448089361191
+
+ Batch 127 finished 
+
+loss_value == 0.03961325064301491
+
+ Batch 128 finished 
+
+loss_value == 0.03771468251943588
+
+ Batch 129 finished 
+
+loss_value == 0.03692794218659401
+
+ Batch 130 finished 
+
+loss_value == 0.04330004006624222
+
+ Batch 131 finished 
+
+loss_value == 0.04010224714875221
+
+ Batch 132 finished 
+
+loss_value == 0.03961384668946266
+
+ Batch 133 finished 
+
+loss_value == 0.03891368210315704
+
+ Batch 134 finished 
+
+loss_value == 0.037811279296875
+
+ Batch 135 finished 
+
+loss_value == 0.041370488703250885
+
+ Batch 136 finished 
+
+loss_value == 0.03821085765957832
+
+ Batch 137 finished 
+
+loss_value == 0.039094939827919006
+
+ Batch 138 finished 
+
+loss_value == 0.037300772964954376
+
+ Batch 139 finished 
+
+
+ Epoch 0 finished 
+
+loss_value == 0.04162420704960823
+
+ Batch 0 finished 
+
+loss_value == 0.04073852673172951
+
+ Batch 1 finished 
+
+loss_value == 0.03986583277583122
+
+ Batch 2 finished 
+
+loss_value == 0.037844154983758926
+
+ Batch 3 finished 
+
+loss_value == 0.04041525349020958
+
+ Batch 4 finished 
+
+loss_value == 0.039259545505046844
+
+ Batch 5 finished 
+
+loss_value == 0.04092158004641533
+
+ Batch 6 finished 
+
+loss_value == 0.04048264026641846
+
+ Batch 7 finished 
+
+loss_value == 0.038932234048843384
+
+ Batch 8 finished 
+
+loss_value == 0.03784715011715889
+
+ Batch 9 finished 
+
+loss_value == 0.03711102157831192
+
+ Batch 10 finished 
+
+loss_value == 0.035768795758485794
+
+ Batch 11 finished 
+
+loss_value == 0.03721063211560249
+
+ Batch 12 finished 
+
+loss_value == 0.03878699988126755
+
+ Batch 13 finished 
+
+loss_value == 0.035972412675619125
+
+ Batch 14 finished 
+
+loss_value == 0.03753408044576645
+
+ Batch 15 finished 
+
+loss_value == 0.038241613656282425
+
+ Batch 16 finished 
+
+loss_value == 0.03731730952858925
+
+ Batch 17 finished 
+
+loss_value == 0.037792764604091644
+
+ Batch 18 finished 
+
+loss_value == 0.037696585059165955
+
+ Batch 19 finished 
+
+loss_value == 0.038974206894636154
+
+ Batch 20 finished 
+
+loss_value == 0.03652213141322136
+
+ Batch 21 finished 
+
+loss_value == 0.03540005907416344
+
+ Batch 22 finished 
+
+loss_value == 0.03842554986476898
+
+ Batch 23 finished 
+
+loss_value == 0.03712128475308418
+
+ Batch 24 finished 
+
+loss_value == 0.03668586537241936
+
+ Batch 25 finished 
+
+loss_value == 0.037299610674381256
+
+ Batch 26 finished 
+
+loss_value == 0.039303258061409
+
+ Batch 27 finished 
+
+loss_value == 0.03769367188215256
+
+ Batch 28 finished 
+
+loss_value == 0.03675789758563042
+
+ Batch 29 finished 
+
+loss_value == 0.036742452532052994
+
+ Batch 30 finished 
+
+loss_value == 0.03620278835296631
+
+ Batch 31 finished 
+
+loss_value == 0.03550729155540466
+
+ Batch 32 finished 
+
+loss_value == 0.03730165213346481
+
+ Batch 33 finished 
+
+loss_value == 0.03653473034501076
+
+ Batch 34 finished 
+
+loss_value == 0.03758050501346588
+
+ Batch 35 finished 
+
+loss_value == 0.03694283217191696
+
+ Batch 36 finished 
+
+loss_value == 0.03724910691380501
+
+ Batch 37 finished 
+
+loss_value == 0.038215335458517075
+
+ Batch 38 finished 
+
+loss_value == 0.03664833679795265
+
+ Batch 39 finished 
+
+loss_value == 0.03850024938583374
+
+ Batch 40 finished 
+
+loss_value == 0.03567123040556908
+
+ Batch 41 finished 
+
+loss_value == 0.03694535046815872
+
+ Batch 42 finished 
+
+loss_value == 0.03662363067269325
+
+ Batch 43 finished 
+
+loss_value == 0.0378897450864315
+
+ Batch 44 finished 
+
+loss_value == 0.03472718596458435
+
+ Batch 45 finished 
+
+loss_value == 0.03379586338996887
+
+ Batch 46 finished 
+
+loss_value == 0.038242191076278687
+
+ Batch 47 finished 
+
+loss_value == 0.0370451956987381
+
+ Batch 48 finished 
+
+loss_value == 0.038841210305690765
+
+ Batch 49 finished 
+
+loss_value == 0.03833216056227684
+
+ Batch 50 finished 
+
+loss_value == 0.03390025720000267
+
+ Batch 51 finished 
+
+loss_value == 0.03488554432988167
+
+ Batch 52 finished 
+
+loss_value == 0.034645192325115204
+
+ Batch 53 finished 
+
+loss_value == 0.03703683987259865
+
+ Batch 54 finished 
+
+loss_value == 0.035898707807064056
+
+ Batch 55 finished 
+
+loss_value == 0.03208516538143158
+
+ Batch 56 finished 
+
+loss_value == 0.035657260566949844
+
+ Batch 57 finished 
+
+loss_value == 0.035842977464199066
+
+ Batch 58 finished 
+
+loss_value == 0.03844176605343819
+
+ Batch 59 finished 
+
+loss_value == 0.03632638603448868
+
+ Batch 60 finished 
+
+loss_value == 0.03460073471069336
+
+ Batch 61 finished 
+
+loss_value == 0.032764509320259094
+
+ Batch 62 finished 
+
+loss_value == 0.035531215369701385
+
+ Batch 63 finished 
+
+loss_value == 0.03445199877023697
+
+ Batch 64 finished 
+
+loss_value == 0.03709021583199501
+
+ Batch 65 finished 
+
+loss_value == 0.034727927297353745
+
+ Batch 66 finished 
+
+loss_value == 0.03755202889442444
+
+ Batch 67 finished 
+
+loss_value == 0.032880160957574844
+
+ Batch 68 finished 
+
+loss_value == 0.03701118379831314
+
+ Batch 69 finished 
+
+loss_value == 0.03633338585495949
+
+ Batch 70 finished 
+
+loss_value == 0.03398897498846054
+
+ Batch 71 finished 
+
+loss_value == 0.03597158566117287
+
+ Batch 72 finished 
+
+loss_value == 0.03506133332848549
+
+ Batch 73 finished 
+
+loss_value == 0.03623253479599953
+
+ Batch 74 finished 
+
+loss_value == 0.035258084535598755
+
+ Batch 75 finished 
+
+loss_value == 0.030796974897384644
+
+ Batch 76 finished 
+
+loss_value == 0.03711167350411415
+
+ Batch 77 finished 
+
+loss_value == 0.03779495507478714
+
+ Batch 78 finished 
+
+loss_value == 0.033039405941963196
+
+ Batch 79 finished 
+
+loss_value == 0.03587484732270241
+
+ Batch 80 finished 
+
+loss_value == 0.03712166100740433
+
+ Batch 81 finished 
+
+loss_value == 0.03458237648010254
+
+ Batch 82 finished 
+
+loss_value == 0.03491200506687164
+
+ Batch 83 finished 
+
+loss_value == 0.03484300523996353
+
+ Batch 84 finished 
+
+loss_value == 0.0316680371761322
+
+ Batch 85 finished 
+
+loss_value == 0.033916834741830826
+
+ Batch 86 finished 
+
+loss_value == 0.036975350230932236
+
+ Batch 87 finished 
+
+loss_value == 0.0346599742770195
+
+ Batch 88 finished 
+
+loss_value == 0.03488940745592117
+
+ Batch 89 finished 
+
+loss_value == 0.033517058938741684
+
+ Batch 90 finished 
+
+loss_value == 0.034785423427820206
+
+ Batch 91 finished 
+
+loss_value == 0.03475838154554367
+
+ Batch 92 finished 
+
+loss_value == 0.035171449184417725
+
+ Batch 93 finished 
+
+loss_value == 0.033379778265953064
+
+ Batch 94 finished 
+
+loss_value == 0.03081624209880829
+
+ Batch 95 finished 
+
+loss_value == 0.03503100946545601
+
+ Batch 96 finished 
+
+loss_value == 0.03510008007287979
+
+ Batch 97 finished 
+
+loss_value == 0.03391652554273605
+
+ Batch 98 finished 
+
+loss_value == 0.03220975771546364
+
+ Batch 99 finished 
+
+loss_value == 0.033036407083272934
+
+ Batch 100 finished 
+
+loss_value == 0.035063013434410095
+
+ Batch 101 finished 
+
+loss_value == 0.03401857241988182
+
+ Batch 102 finished 
+
+loss_value == 0.03454737737774849
+
+ Batch 103 finished 
+
+loss_value == 0.03187030553817749
+
+ Batch 104 finished 
+
+loss_value == 0.03407561033964157
+
+ Batch 105 finished 
+
+loss_value == 0.03425062820315361
+
+ Batch 106 finished 
+
+loss_value == 0.028641168028116226
+
+ Batch 107 finished 
+
+loss_value == 0.03438813239336014
+
+ Batch 108 finished 
+
+loss_value == 0.034329790621995926
+
+ Batch 109 finished 
+
+loss_value == 0.03376952186226845
+
+ Batch 110 finished 
+
+loss_value == 0.03514254093170166
+
+ Batch 111 finished 
+
+loss_value == 0.032407090067863464
+
+ Batch 112 finished 
+
+loss_value == 0.03475634381175041
+
+ Batch 113 finished 
+
+loss_value == 0.033055637031793594
+
+ Batch 114 finished 
+
+loss_value == 0.03566523268818855
+
+ Batch 115 finished 
+
+loss_value == 0.03382743149995804
+
+ Batch 116 finished 
+
+loss_value == 0.0343855619430542
+
+ Batch 117 finished 
+
+loss_value == 0.03465218096971512
+
+ Batch 118 finished 
+
+loss_value == 0.03398831561207771
+
+ Batch 119 finished 
+
+loss_value == 0.03223785012960434
+
+ Batch 120 finished 
+
+loss_value == 0.03395368531346321
+
+ Batch 121 finished 
+
+loss_value == 0.03377552330493927
+
+ Batch 122 finished 
+
+loss_value == 0.03251347690820694
+
+ Batch 123 finished 
+
+loss_value == 0.033757783472537994
+
+ Batch 124 finished 
+
+loss_value == 0.030339039862155914
+
+ Batch 125 finished 
+
+loss_value == 0.03495659679174423
+
+ Batch 126 finished 
+
+loss_value == 0.03408192843198776
+
+ Batch 127 finished 
+
+loss_value == 0.033043861389160156
+
+ Batch 128 finished 
+
+loss_value == 0.03417353704571724
+
+ Batch 129 finished 
+
+loss_value == 0.03094722516834736
+
+ Batch 130 finished 
+
+loss_value == 0.03346813842654228
+
+ Batch 131 finished 
+
+loss_value == 0.03414277359843254
+
+ Batch 132 finished 
+
+loss_value == 0.029750317335128784
+
+ Batch 133 finished 
+
+loss_value == 0.032486047595739365
+
+ Batch 134 finished 
+
+loss_value == 0.03131698817014694
+
+ Batch 135 finished 
+
+loss_value == 0.03428017720580101
+
+ Batch 136 finished 
+
+loss_value == 0.03131573274731636
+
+ Batch 137 finished 
+
+loss_value == 0.0334598571062088
+
+ Batch 138 finished 
+
+loss_value == 0.034401215612888336
+
+ Batch 139 finished 
+
+
+ Epoch 1 finished 
+
+
+
+ NUM_TIME_STEPS = 20 
+
+
+
+ model_nn.learned_keys = {'y_momentum_edge_x', 'density_edge_y', 'x_momentum_edge_y', 'x_momentum_edge_x', 'y_momentum_edge_y', 'energy_edge_x', 'energy_edge_y', 'density_edge_x'}
+
+ model_nn.fixed_keys = {'energy', 'y_momentum', 'x_momentum', 'density'}
+
+
+ num_epochs = 1 
+
+
+weights[0].shape = (3, 3, 4, 128)
+weights[1].shape = (128,)
+weights[2].shape = (3, 3, 128, 128)
+weights[3].shape = (128,)
+weights[4].shape = (3, 3, 128, 128)
+weights[5].shape = (128,)
+weights[6].shape = (3, 3, 128, 152)
+weights[7].shape = (152,)
+
+ learning_rate = 1.00e-04 
+
+
+ batch_size = 32 
+
+loss_value == 0.04382060468196869
+
+ Batch 0 finished 
+
+loss_value == 0.0663786306977272
+
+ Batch 1 finished 
+
+loss_value == 0.04663433879613876
+
+ Batch 2 finished 
+
+loss_value == 0.051900602877140045
+
+ Batch 3 finished 
+
+loss_value == 0.05380487069487572
+
+ Batch 4 finished 
+
+loss_value == 0.04987124353647232
+
+ Batch 5 finished 
+
+loss_value == 0.044576529413461685
+
+ Batch 6 finished 
+
+loss_value == 0.0448889285326004
+
+ Batch 7 finished 
+
+loss_value == 0.05125727504491806
+
+ Batch 8 finished 
+
+loss_value == 0.047451846301555634
+
+ Batch 9 finished 
+
+loss_value == 0.04533162713050842
+
+ Batch 10 finished 
+
+loss_value == 0.047060683369636536
+
+ Batch 11 finished 
+
+loss_value == 0.047436803579330444
+
+ Batch 12 finished 
+
+loss_value == 0.04791475087404251
+
+ Batch 13 finished 
+
+loss_value == 0.0461914986371994
+
+ Batch 14 finished 
+
+loss_value == 0.043654996901750565
+
+ Batch 15 finished 
+
+loss_value == 0.04368032515048981
+
+ Batch 16 finished 
+
+loss_value == 0.042904388159513474
+
+ Batch 17 finished 
+
+loss_value == 0.041920457035303116
+
+ Batch 18 finished 
+
+loss_value == 0.046108849346637726
+
+ Batch 19 finished 
+
+loss_value == 0.04584265872836113
+
+ Batch 20 finished 
+
+loss_value == 0.04366264492273331
+
+ Batch 21 finished 
+
+loss_value == 0.04507042467594147
+
+ Batch 22 finished 
+
+loss_value == 0.044992003589868546
+
+ Batch 23 finished 
+
+loss_value == 0.0463918074965477
+
+ Batch 24 finished 
+
+loss_value == 0.042068012058734894
+
+ Batch 25 finished 
+
+loss_value == 0.04346371442079544
+
+ Batch 26 finished 
+
+loss_value == 0.04406502842903137
+
+ Batch 27 finished 
+
+loss_value == 0.040756311267614365
+
+ Batch 28 finished 
+
+loss_value == 0.04312802478671074
+
+ Batch 29 finished 
+
+loss_value == 0.04280157759785652
+
+ Batch 30 finished 
+
+loss_value == 0.045447610318660736
+
+ Batch 31 finished 
+
+loss_value == 0.04197903722524643
+
+ Batch 32 finished 
+
+loss_value == 0.0435304194688797
+
+ Batch 33 finished 
+
+loss_value == 0.04297914355993271
+
+ Batch 34 finished 
+
+loss_value == 0.04196759685873985
+
+ Batch 35 finished 
+
+loss_value == 0.04210329055786133
+
+ Batch 36 finished 
+
+loss_value == 0.04011159762740135
+
+ Batch 37 finished 
+
+loss_value == 0.03947979584336281
+
+ Batch 38 finished 
+
+loss_value == 0.04032893851399422
+
+ Batch 39 finished 
+
+loss_value == 0.041863247752189636
+
+ Batch 40 finished 
+
+loss_value == 0.04110497608780861
+
+ Batch 41 finished 
+
+loss_value == 0.042635537683963776
+
+ Batch 42 finished 
+
+loss_value == 0.042711514979600906
+
+ Batch 43 finished 
+
+loss_value == 0.039993878453969955
+
+ Batch 44 finished 
+
+loss_value == 0.04353327676653862
+
+ Batch 45 finished 
+
+loss_value == 0.040771812200546265
+
+ Batch 46 finished 
+
+loss_value == 0.041697174310684204
+
+ Batch 47 finished 
+
+loss_value == 0.039367061108350754
+
+ Batch 48 finished 
+
+loss_value == 0.04065786302089691
+
+ Batch 49 finished 
+
+loss_value == 0.042974863201379776
+
+ Batch 50 finished 
+
+loss_value == 0.04332895949482918
+
+ Batch 51 finished 
+
+loss_value == 0.0432995967566967
+
+ Batch 52 finished 
+
+loss_value == 0.043268945068120956
+
+ Batch 53 finished 
+
+loss_value == 0.04161684960126877
+
+ Batch 54 finished 
+
+loss_value == 0.04108092561364174
+
+ Batch 55 finished 
+
+loss_value == 0.042371466755867004
+
+ Batch 56 finished 
+
+loss_value == 0.040930017828941345
+
+ Batch 57 finished 
+
+loss_value == 0.04131390526890755
+
+ Batch 58 finished 
+
+loss_value == 0.0419362410902977
+
+ Batch 59 finished 
+
+loss_value == 0.04188964515924454
+
+ Batch 60 finished 
+
+loss_value == 0.04201602190732956
+
+ Batch 61 finished 
+
+loss_value == 0.04072162136435509
+
+ Batch 62 finished 
+
+loss_value == 0.041881263256073
+
+ Batch 63 finished 
+
+loss_value == 0.04196071997284889
+
+ Batch 64 finished 
+
+loss_value == 0.039399418979883194
+
+ Batch 65 finished 
+
+loss_value == 0.03906227648258209
+
+ Batch 66 finished 
+
+loss_value == 0.04148686304688454
+
+ Batch 67 finished 
+
+loss_value == 0.040495820343494415
+
+ Batch 68 finished 
+
+loss_value == 0.04109372943639755
+
+ Batch 69 finished 
+
+loss_value == 0.03964143246412277
+
+ Batch 70 finished 
+
+loss_value == 0.04355955496430397
+
+ Batch 71 finished 
+
+loss_value == 0.042250074446201324
+
+ Batch 72 finished 
+
+loss_value == 0.03941699489951134
+
+ Batch 73 finished 
+
+loss_value == 0.04081122949719429
+
+ Batch 74 finished 
+
+loss_value == 0.042212001979351044
+
+ Batch 75 finished 
+
+loss_value == 0.039232682436704636
+
+ Batch 76 finished 
+
+loss_value == 0.03950174152851105
+
+ Batch 77 finished 
+
+loss_value == 0.040441930294036865
+
+ Batch 78 finished 
+
+loss_value == 0.040579333901405334
+
+ Batch 79 finished 
+
+loss_value == 0.04032202437520027
+
+ Batch 80 finished 
+
+loss_value == 0.04095926508307457
+
+ Batch 81 finished 
+
+loss_value == 0.041252315044403076
+
+ Batch 82 finished 
+
+loss_value == 0.04316925257444382
+
+ Batch 83 finished 
+
+loss_value == 0.04238589107990265
+
+ Batch 84 finished 
+
+loss_value == 0.037905946373939514
+
+ Batch 85 finished 
+
+loss_value == 0.039284441620111465
+
+ Batch 86 finished 
+
+loss_value == 0.03996109217405319
+
+ Batch 87 finished 
+
+loss_value == 0.04106982424855232
+
+ Batch 88 finished 
+
+loss_value == 0.03748515993356705
+
+ Batch 89 finished 
+
+loss_value == 0.04182828962802887
+
+ Batch 90 finished 
+
+loss_value == 0.041429247707128525
+
+ Batch 91 finished 
+
+loss_value == 0.040910154581069946
+
+ Batch 92 finished 
+
+loss_value == 0.037410151213407516
+
+ Batch 93 finished 
+
+loss_value == 0.039339128881692886
+
+ Batch 94 finished 
+
+loss_value == 0.03991065174341202
+
+ Batch 95 finished 
+
+loss_value == 0.038209062069654465
+
+ Batch 96 finished 
+
+loss_value == 0.03958359360694885
+
+ Batch 97 finished 
+
+loss_value == 0.042722634971141815
+
+ Batch 98 finished 
+
+loss_value == 0.0411868654191494
+
+ Batch 99 finished 
+
+loss_value == 0.040862154215574265
+
+ Batch 100 finished 
+
+loss_value == 0.03679542616009712
+
+ Batch 101 finished 
+
+loss_value == 0.04163788631558418
+
+ Batch 102 finished 
+
+loss_value == 0.041182130575180054
+
+ Batch 103 finished 
+
+loss_value == 0.039161186665296555
+
+ Batch 104 finished 
+
+loss_value == 0.03753295913338661
+
+ Batch 105 finished 
+
+loss_value == 0.040920522063970566
+
+ Batch 106 finished 
+
+loss_value == 0.03935105726122856
+
+ Batch 107 finished 
+
+loss_value == 0.040925342589616776
+
+ Batch 108 finished 
+
+loss_value == 0.03981625661253929
+
+ Batch 109 finished 
+
+loss_value == 0.04183970391750336
+
+ Batch 110 finished 
+
+loss_value == 0.04249633103609085
+
+ Batch 111 finished 
+
+loss_value == 0.0399172380566597
+
+ Batch 112 finished 
+
+loss_value == 0.03817623853683472
+
+ Batch 113 finished 
+
+loss_value == 0.03929184377193451
+
+ Batch 114 finished 
+
+loss_value == 0.041523467749357224
+
+ Batch 115 finished 
+
+loss_value == 0.03960510715842247
+
+ Batch 116 finished 
+
+loss_value == 0.03766034170985222
+
+ Batch 117 finished 
+
+loss_value == 0.0407661572098732
+
+ Batch 118 finished 
+
+loss_value == 0.04065767303109169
+
+ Batch 119 finished 
+
+loss_value == 0.03941013664007187
+
+ Batch 120 finished 
+
+loss_value == 0.04004955291748047
+
+ Batch 121 finished 
+
+loss_value == 0.04234354570508003
+
+ Batch 122 finished 
+
+loss_value == 0.040608491748571396
+
+ Batch 123 finished 
+
+loss_value == 0.038399048149585724
+
+ Batch 124 finished 
+
+loss_value == 0.03982216492295265
+
+ Batch 125 finished 
+
+loss_value == 0.04014631360769272
+
+ Batch 126 finished 
+
+loss_value == 0.04031214118003845
+
+ Batch 127 finished 
+
+loss_value == 0.040286384522914886
+
+ Batch 128 finished 
+
+loss_value == 0.03887391835451126
+
+ Batch 129 finished 
+
+loss_value == 0.04018532112240791
+
+ Batch 130 finished 
+
+loss_value == 0.03986549749970436
+
+ Batch 131 finished 
+
+loss_value == 0.03988909348845482
+
+ Batch 132 finished 
+
+loss_value == 0.03878317400813103
+
+ Batch 133 finished 
+
+loss_value == 0.037998322397470474
+
+ Batch 134 finished 
+
+loss_value == 0.03905769810080528
+
+ Batch 135 finished 
+
+loss_value == 0.03684466704726219
+
+ Batch 136 finished 
+
+loss_value == 0.04039306193590164
+
+ Batch 137 finished 
+
+loss_value == 0.03858429938554764
+
+ Batch 138 finished 
+
+loss_value == 0.03584489971399307
+
+ Batch 139 finished 
+
+
+ Epoch 0 finished 
+
+
+
+ NUM_TIME_STEPS = 90 
+
+
+
+ model_nn.learned_keys = {'y_momentum_edge_x', 'density_edge_y', 'x_momentum_edge_y', 'x_momentum_edge_x', 'y_momentum_edge_y', 'energy_edge_x', 'energy_edge_y', 'density_edge_x'}
+
+ model_nn.fixed_keys = {'energy', 'y_momentum', 'x_momentum', 'density'}
+
+
+ num_epochs = 1 
+
+
+weights[0].shape = (3, 3, 4, 128)
+weights[1].shape = (128,)
+weights[2].shape = (3, 3, 128, 128)
+weights[3].shape = (128,)
+weights[4].shape = (3, 3, 128, 128)
+weights[5].shape = (128,)
+weights[6].shape = (3, 3, 128, 152)
+weights[7].shape = (152,)
+
+ learning_rate = 1.00e-04 
+
+
+ batch_size = 8 
+
+loss_value == 0.07812812924385071
+
+ Batch 0 finished 
+
+loss_value == 0.1374715119600296
+
+ Batch 1 finished 
+
+loss_value == 0.11712448298931122
+
+ Batch 2 finished 
+
+loss_value == 0.13218635320663452
+
+ Batch 3 finished 
+
+loss_value == 0.11102600395679474
+
+ Batch 4 finished 
+
+loss_value == 0.11509568244218826
+
+ Batch 5 finished 
+
+loss_value == 0.10179011523723602
+
+ Batch 6 finished 
+
+loss_value == 0.1313316971063614
+
+ Batch 7 finished 
+
+loss_value == 0.10371983051300049
+
+ Batch 8 finished 
+
+loss_value == 0.10621234774589539
+
+ Batch 9 finished 
+
+loss_value == 0.09825018793344498
+
+ Batch 10 finished 
+
+loss_value == 0.10689464211463928
+
+ Batch 11 finished 
+
+loss_value == 0.10058534145355225
+
+ Batch 12 finished 
+
+loss_value == 0.0911874771118164
+
+ Batch 13 finished 
+
+loss_value == 0.10429807752370834
+
+ Batch 14 finished 
+
+loss_value == 0.09063555300235748
+
+ Batch 15 finished 
+
+loss_value == 0.1096373051404953
+
+ Batch 16 finished 
+
+loss_value == 0.08767865598201752
+
+ Batch 17 finished 
+
+loss_value == 0.08914235234260559
+
+ Batch 18 finished 
+
+loss_value == 0.08186087012290955
+
+ Batch 19 finished 
+
+loss_value == 0.09235571324825287
+
+ Batch 20 finished 
+
+loss_value == 0.08798694610595703
+
+ Batch 21 finished 
+
+loss_value == 0.09154428541660309
+
+ Batch 22 finished 
+
+loss_value == 0.0906355232000351
+
+ Batch 23 finished 
+
+loss_value == 0.09444250166416168
+
+ Batch 24 finished 
+
+loss_value == 0.09406812489032745
+
+ Batch 25 finished 
+
+loss_value == 0.09623388946056366
+
+ Batch 26 finished 
+
+loss_value == 0.09273704886436462
+
+ Batch 27 finished 
+
+loss_value == 0.08290086686611176
+
+ Batch 28 finished 
+
+loss_value == 0.08276261389255524
+
+ Batch 29 finished 
+
+loss_value == 0.08017116785049438
+
+ Batch 30 finished 
+
+loss_value == 0.07764885574579239
+
+ Batch 31 finished 
+
+loss_value == 0.08805814385414124
+
+ Batch 32 finished 
+
+loss_value == 0.07636836171150208
+
+ Batch 33 finished 
+
+loss_value == 0.0854744017124176
+
+ Batch 34 finished 
+
+loss_value == 0.07542556524276733
+
+ Batch 35 finished 
+
+loss_value == 0.08049055188894272
+
+ Batch 36 finished 
+
+loss_value == 0.08197639137506485
+
+ Batch 37 finished 
+
+loss_value == 0.06982263922691345
+
+ Batch 38 finished 
+
+loss_value == 0.07110503315925598
+
+ Batch 39 finished 
+
+loss_value == 0.07567211985588074
+
+ Batch 40 finished 
+
+loss_value == 0.07365083694458008
+
+ Batch 41 finished 
+
+loss_value == 0.08251909911632538
+
+ Batch 42 finished 
+
+loss_value == 0.07573246210813522
+
+ Batch 43 finished 
+
+loss_value == 0.08727090060710907
+
+ Batch 44 finished 
+
+loss_value == 0.07291106879711151
+
+ Batch 45 finished 
+
+loss_value == 0.08101892471313477
+
+ Batch 46 finished 
+
+loss_value == 0.07161159068346024
+
+ Batch 47 finished 
+
+loss_value == 0.07444474846124649
+
+ Batch 48 finished 
+
+loss_value == 0.07980754971504211
+
+ Batch 49 finished 
+
+loss_value == 0.09340794384479523
+
+ Batch 50 finished 
+
+loss_value == 0.08381021022796631
+
+ Batch 51 finished 
+
+loss_value == 0.07297450304031372
+
+ Batch 52 finished 
+
+loss_value == 0.07386626303195953
+
+ Batch 53 finished 
+
+loss_value == 0.07983364164829254
+
+ Batch 54 finished 
+
+loss_value == 0.06781205534934998
+
+ Batch 55 finished 
+
+loss_value == 0.07678443193435669
+
+ Batch 56 finished 
+
+loss_value == 0.06873589009046555
+
+ Batch 57 finished 
+
+loss_value == 0.08701437711715698
+
+ Batch 58 finished 
+
+loss_value == 0.08067990094423294
+
+ Batch 59 finished 
+
+loss_value == 0.08399124443531036
+
+ Batch 60 finished 
+
+loss_value == 0.08096672594547272
+
+ Batch 61 finished 
+
+loss_value == 0.0781562328338623
+
+ Batch 62 finished 
+
+loss_value == 0.07964418083429337
+
+ Batch 63 finished 
+
+loss_value == 0.07820959389209747
+
+ Batch 64 finished 
+
+loss_value == 0.07445467263460159
+
+ Batch 65 finished 
+
+loss_value == 0.0799708217382431
+
+ Batch 66 finished 
+
+loss_value == 0.07137930393218994
+
+ Batch 67 finished 
+
+loss_value == 0.0765959769487381
+
+ Batch 68 finished 
+
+loss_value == 0.08615019917488098
+
+ Batch 69 finished 
+
+loss_value == 0.08373969793319702
+
+ Batch 70 finished 
+
+loss_value == 0.0675337016582489
+
+ Batch 71 finished 
+
+loss_value == 0.08664019405841827
+
+ Batch 72 finished 
+
+loss_value == 0.07481096684932709
+
+ Batch 73 finished 
+
+loss_value == 0.07476235181093216
+
+ Batch 74 finished 
+
+loss_value == 0.07299011945724487
+
+ Batch 75 finished 
+
+loss_value == 0.08767068386077881
+
+ Batch 76 finished 
+
+loss_value == 0.07411611080169678
+
+ Batch 77 finished 
+
+loss_value == 0.07202183455228806
+
+ Batch 78 finished 
+
+loss_value == 0.0784730613231659
+
+ Batch 79 finished 
+
+loss_value == 0.08007113635540009
+
+ Batch 80 finished 
+
+loss_value == 0.0709744244813919
+
+ Batch 81 finished 
+
+loss_value == 0.08455497026443481
+
+ Batch 82 finished 
+
+loss_value == 0.08251035213470459
+
+ Batch 83 finished 
+
+loss_value == 0.07743723690509796
+
+ Batch 84 finished 
+
+loss_value == 0.07357878983020782
+
+ Batch 85 finished 
+
+loss_value == 0.06771507114171982
+
+ Batch 86 finished 
+
+loss_value == 0.06973396241664886
+
+ Batch 87 finished 
+
+loss_value == 0.08649476617574692
+
+ Batch 88 finished 
+
+loss_value == 0.08559571206569672
+
+ Batch 89 finished 
+
+loss_value == 0.06711877137422562
+
+ Batch 90 finished 
+
+loss_value == 0.07036396861076355
+
+ Batch 91 finished 
+
+loss_value == 0.07067503780126572
+
+ Batch 92 finished 
+
+loss_value == 0.07396179437637329
+
+ Batch 93 finished 
+
+loss_value == 0.08162795007228851
+
+ Batch 94 finished 
+
+loss_value == 0.062302686274051666
+
+ Batch 95 finished 
+
+loss_value == 0.07237228006124496
+
+ Batch 96 finished 
+
+loss_value == 0.06872250884771347
+
+ Batch 97 finished 
+
+loss_value == 0.07510879635810852
+
+ Batch 98 finished 
+
+loss_value == 0.0771874487400055
+
+ Batch 99 finished 
+
+loss_value == 0.06715327501296997
+
+ Batch 100 finished 
+
+loss_value == 0.07175204902887344
+
+ Batch 101 finished 
+
+loss_value == 0.07484783977270126
+
+ Batch 102 finished 
+
+loss_value == 0.06758267432451248
+
+ Batch 103 finished 
+
+loss_value == 0.07421787828207016
+
+ Batch 104 finished 
+
+loss_value == 0.07147792726755142
+
+ Batch 105 finished 
+
+loss_value == 0.07638619840145111
+
+ Batch 106 finished 
+
+loss_value == 0.07724682986736298
+
+ Batch 107 finished 
+
+loss_value == 0.07839490473270416
+
+ Batch 108 finished 
+
+loss_value == 0.07709945738315582
+
+ Batch 109 finished 
+
+loss_value == 0.0780894085764885
+
+ Batch 110 finished 
+
+loss_value == 0.06875348836183548
+
+ Batch 111 finished 
+
+loss_value == 0.06705053895711899
+
+ Batch 112 finished 
+
+loss_value == 0.075444795191288
+
+ Batch 113 finished 
+
+loss_value == 0.06721919775009155
+
+ Batch 114 finished 
+
+loss_value == 0.07352232933044434
+
+ Batch 115 finished 
+
+loss_value == 0.06897661089897156
+
+ Batch 116 finished 
+
+loss_value == 0.07866368442773819
+
+ Batch 117 finished 
+
+loss_value == 0.07626549154520035
+
+ Batch 118 finished 
+
+loss_value == 0.07213358581066132
+
+ Batch 119 finished 
+
+loss_value == 0.07661246508359909
+
+ Batch 120 finished 
+
+loss_value == 0.07241947203874588
+
+ Batch 121 finished 
+
+loss_value == 0.06555875390768051
+
+ Batch 122 finished 
+
+loss_value == 0.07629014551639557
+
+ Batch 123 finished 
+
+loss_value == 0.07643090933561325
+
+ Batch 124 finished 
+
+loss_value == 0.0762036144733429
+
+ Batch 125 finished 
+
+loss_value == 0.07592808455228806
+
+ Batch 126 finished 
+
+loss_value == 0.07225009799003601
+
+ Batch 127 finished 
+
+loss_value == 0.07697173953056335
+
+ Batch 128 finished 
+
+loss_value == 0.07393726706504822
+
+ Batch 129 finished 
+
+loss_value == 0.06776394695043564
+
+ Batch 130 finished 
+
+loss_value == 0.06977063417434692
+
+ Batch 131 finished 
+
+loss_value == 0.07786185294389725
+
+ Batch 132 finished 
+
+loss_value == 0.07557082176208496
+
+ Batch 133 finished 
+
+loss_value == 0.07482300698757172
+
+ Batch 134 finished 
+
+loss_value == 0.08177697658538818
+
+ Batch 135 finished 
+
+loss_value == 0.06892792880535126
+
+ Batch 136 finished 
+
+loss_value == 0.07773934304714203
+
+ Batch 137 finished 
+
+loss_value == 0.07933741807937622
+
+ Batch 138 finished 
+
+loss_value == 0.0787072479724884
+
+ Batch 139 finished 
+
+loss_value == 0.08045583963394165
+
+ Batch 140 finished 
+
+loss_value == 0.06918295472860336
+
+ Batch 141 finished 
+
+loss_value == 0.07601947337388992
+
+ Batch 142 finished 
+
+loss_value == 0.06927020847797394
+
+ Batch 143 finished 
+
+loss_value == 0.07543026655912399
+
+ Batch 144 finished 
+
+loss_value == 0.07445535063743591
+
+ Batch 145 finished 
+
+loss_value == 0.08829709142446518
+
+ Batch 146 finished 
+
+loss_value == 0.07740756869316101
+
+ Batch 147 finished 
+
+loss_value == 0.0742652416229248
+
+ Batch 148 finished 
+
+loss_value == 0.07989443838596344
+
+ Batch 149 finished 
+
+loss_value == 0.0814342200756073
+
+ Batch 150 finished 
+
+loss_value == 0.07623817771673203
+
+ Batch 151 finished 
+
+loss_value == 0.07314486056566238
+
+ Batch 152 finished 
+
+loss_value == 0.06798005104064941
+
+ Batch 153 finished 
+
+loss_value == 0.07654662430286407
+
+ Batch 154 finished 
+
+loss_value == 0.06747119128704071
+
+ Batch 155 finished 
+
+loss_value == 0.07008000463247299
+
+ Batch 156 finished 
+
+loss_value == 0.07824993878602982
+
+ Batch 157 finished 
+
+loss_value == 0.07140029966831207
+
+ Batch 158 finished 
+
+loss_value == 0.07581253349781036
+
+ Batch 159 finished 
+
+loss_value == 0.077812060713768
+
+ Batch 160 finished 
+
+loss_value == 0.0752505213022232
+
+ Batch 161 finished 
+
+loss_value == 0.06588196754455566
+
+ Batch 162 finished 
+
+loss_value == 0.06566821783781052
+
+ Batch 163 finished 
+
+loss_value == 0.07442672550678253
+
+ Batch 164 finished 
+
+loss_value == 0.06732915341854095
+
+ Batch 165 finished 
+
+loss_value == 0.06655644625425339
+
+ Batch 166 finished 
+
+loss_value == 0.06891754269599915
+
+ Batch 167 finished 
+
+loss_value == 0.0639728456735611
+
+ Batch 168 finished 
+
+loss_value == 0.07122242450714111
+
+ Batch 169 finished 
+
+loss_value == 0.08079229295253754
+
+ Batch 170 finished 
+
+loss_value == 0.07564198970794678
+
+ Batch 171 finished 
+
+loss_value == 0.06768462806940079
+
+ Batch 172 finished 
+
+loss_value == 0.06675708293914795
+
+ Batch 173 finished 
+
+loss_value == 0.06814552843570709
+
+ Batch 174 finished 
+
+loss_value == 0.07726087421178818
+
+ Batch 175 finished 
+
+loss_value == 0.07039513438940048
+
+ Batch 176 finished 
+
+loss_value == 0.0721893459558487
+
+ Batch 177 finished 
+
+loss_value == 0.07149866968393326
+
+ Batch 178 finished 
+
+loss_value == 0.07758976519107819
+
+ Batch 179 finished 
+
+loss_value == 0.07191731035709381
+
+ Batch 180 finished 
+
+loss_value == 0.07245279103517532
+
+ Batch 181 finished 
+
+loss_value == 0.07364993542432785
+
+ Batch 182 finished 
+
+loss_value == 0.07029403746128082
+
+ Batch 183 finished 
+
+loss_value == 0.08176940679550171
+
+ Batch 184 finished 
+
+loss_value == 0.08113879710435867
+
+ Batch 185 finished 
+
+loss_value == 0.06938908994197845
+
+ Batch 186 finished 
+
+loss_value == 0.06891601532697678
+
+ Batch 187 finished 
+
+loss_value == 0.07390294224023819
+
+ Batch 188 finished 
+
+loss_value == 0.06679850816726685
+
+ Batch 189 finished 
+
+loss_value == 0.07357479631900787
+
+ Batch 190 finished 
+
+loss_value == 0.07196057587862015
+
+ Batch 191 finished 
+
+loss_value == 0.07600291073322296
+
+ Batch 192 finished 
+
+loss_value == 0.06639131903648376
+
+ Batch 193 finished 
+
+loss_value == 0.06287375092506409
+
+ Batch 194 finished 
+
+loss_value == 0.06432132422924042
+
+ Batch 195 finished 
+
+loss_value == 0.06981341540813446
+
+ Batch 196 finished 
+
+loss_value == 0.07147461175918579
+
+ Batch 197 finished 
+
+loss_value == 0.07796330749988556
+
+ Batch 198 finished 
+
+loss_value == 0.0710020512342453
+
+ Batch 199 finished 
+
+loss_value == 0.07904069870710373
+
+ Batch 200 finished 
+
+loss_value == 0.06798616051673889
+
+ Batch 201 finished 
+
+loss_value == 0.07441054284572601
+
+ Batch 202 finished 
+
+loss_value == 0.06831452250480652
+
+ Batch 203 finished 
+
+loss_value == 0.07163465023040771
+
+ Batch 204 finished 
+
+loss_value == 0.07065935432910919
+
+ Batch 205 finished 
+
+loss_value == 0.06354474276304245
+
+ Batch 206 finished 
+
+loss_value == 0.0667165145277977
+
+ Batch 207 finished 
+
+loss_value == 0.06771808117628098
+
+ Batch 208 finished 
+
+loss_value == 0.0665193721652031
+
+ Batch 209 finished 
+
+loss_value == 0.07544423639774323
+
+ Batch 210 finished 
+
+loss_value == 0.07928431779146194
+
+ Batch 211 finished 
+
+loss_value == 0.07084635645151138
+
+ Batch 212 finished 
+
+loss_value == 0.06961716711521149
+
+ Batch 213 finished 
+
+loss_value == 0.07051411271095276
+
+ Batch 214 finished 
+
+loss_value == 0.07764291018247604
+
+ Batch 215 finished 
+
+loss_value == 0.07598163932561874
+
+ Batch 216 finished 
+
+loss_value == 0.06805054843425751
+
+ Batch 217 finished 
+
+loss_value == 0.06832931935787201
+
+ Batch 218 finished 
+
+loss_value == 0.06594858318567276
+
+ Batch 219 finished 
+
+loss_value == 0.07208635658025742
+
+ Batch 220 finished 
+
+loss_value == 0.07432916760444641
+
+ Batch 221 finished 
+
+loss_value == 0.07408755272626877
+
+ Batch 222 finished 
+
+loss_value == 0.06811150163412094
+
+ Batch 223 finished 
+
+loss_value == 0.0745166763663292
+
+ Batch 224 finished 
+
+loss_value == 0.07273954153060913
+
+ Batch 225 finished 
+
+loss_value == 0.06751582771539688
+
+ Batch 226 finished 
+
+loss_value == 0.07612977921962738
+
+ Batch 227 finished 
+
+loss_value == 0.06861235201358795
+
+ Batch 228 finished 
+
+loss_value == 0.07434353977441788
+
+ Batch 229 finished 
+
+loss_value == 0.061731547117233276
+
+ Batch 230 finished 
+
+loss_value == 0.07037334144115448
+
+ Batch 231 finished 
+
+loss_value == 0.0719531700015068
+
+ Batch 232 finished 
+
+loss_value == 0.07032833993434906
+
+ Batch 233 finished 
+
+loss_value == 0.07597203552722931
+
+ Batch 234 finished 
+
+loss_value == 0.07487306743860245
+
+ Batch 235 finished 
+
+loss_value == 0.07040034979581833
+
+ Batch 236 finished 
+
+loss_value == 0.0706876888871193
+
+ Batch 237 finished 
+
+loss_value == 0.06745703518390656
+
+ Batch 238 finished 
+
+loss_value == 0.07681643962860107
+
+ Batch 239 finished 
+
+loss_value == 0.06783650815486908
+
+ Batch 240 finished 
+
+loss_value == 0.06622079759836197
+
+ Batch 241 finished 
+
+loss_value == 0.06826809793710709
+
+ Batch 242 finished 
+
+loss_value == 0.07179060578346252
+
+ Batch 243 finished 
+
+loss_value == 0.06924472749233246
+
+ Batch 244 finished 
+
+loss_value == 0.06396237015724182
+
+ Batch 245 finished 
+
+loss_value == 0.0697539746761322
+
+ Batch 246 finished 
+
+loss_value == 0.07346368581056595
+
+ Batch 247 finished 
+
+loss_value == 0.05993187427520752
+
+ Batch 248 finished 
+
+loss_value == 0.06923587620258331
+
+ Batch 249 finished 
+
+loss_value == 0.08054325729608536
+
+ Batch 250 finished 
+
+loss_value == 0.07295182347297668
+
+ Batch 251 finished 
+
+loss_value == 0.07646279036998749
+
+ Batch 252 finished 
+
+loss_value == 0.08313120156526566
+
+ Batch 253 finished 
+
+loss_value == 0.07418017089366913
+
+ Batch 254 finished 
+
+loss_value == 0.0750231146812439
+
+ Batch 255 finished 
+
+loss_value == 0.07830644398927689
+
+ Batch 256 finished 
+
+loss_value == 0.06947796046733856
+
+ Batch 257 finished 
+
+loss_value == 0.07249435037374496
+
+ Batch 258 finished 
+
+loss_value == 0.07635965943336487
+
+ Batch 259 finished 
+
+loss_value == 0.0715731680393219
+
+ Batch 260 finished 
+
+loss_value == 0.07494352012872696
+
+ Batch 261 finished 
+
+loss_value == 0.06720341742038727
+
+ Batch 262 finished 
+
+loss_value == 0.06920957565307617
+
+ Batch 263 finished 
+
+loss_value == 0.0721426010131836
+
+ Batch 264 finished 
+
+loss_value == 0.07298173010349274
+
+ Batch 265 finished 
+
+loss_value == 0.07313776016235352
+
+ Batch 266 finished 
+
+loss_value == 0.06792458891868591
+
+ Batch 267 finished 
+
+loss_value == 0.07487652450799942
+
+ Batch 268 finished 
+
+loss_value == 0.08078593760728836
+
+ Batch 269 finished 
+
+loss_value == 0.06294992566108704
+
+ Batch 270 finished 
+
+loss_value == 0.06418167054653168
+
+ Batch 271 finished 
+
+loss_value == 0.0713275820016861
+
+ Batch 272 finished 
+
+loss_value == 0.06342919170856476
+
+ Batch 273 finished 
+
+loss_value == 0.07246754318475723
+
+ Batch 274 finished 
+
+loss_value == 0.06367660313844681
+
+ Batch 275 finished 
+
+loss_value == 0.061389658600091934
+
+ Batch 276 finished 
+
+loss_value == 0.08351609855890274
+
+ Batch 277 finished 
+
+loss_value == 0.061722587794065475
+
+ Batch 278 finished 
+
+loss_value == 0.06215140223503113
+
+ Batch 279 finished 
+
+loss_value == 0.07094109803438187
+
+ Batch 280 finished 
+
+loss_value == 0.06878358125686646
+
+ Batch 281 finished 
+
+loss_value == 0.06591343879699707
+
+ Batch 282 finished 
+
+loss_value == 0.0712709054350853
+
+ Batch 283 finished 
+
+loss_value == 0.07125293463468552
+
+ Batch 284 finished 
+
+loss_value == 0.0712510421872139
+
+ Batch 285 finished 
+
+loss_value == 0.06338482350111008
+
+ Batch 286 finished 
+
+loss_value == 0.06728259474039078
+
+ Batch 287 finished 
+
+loss_value == 0.07344140112400055
+
+ Batch 288 finished 
+
+loss_value == 0.07069185376167297
+
+ Batch 289 finished 
+
+loss_value == 0.06947747617959976
+
+ Batch 290 finished 
+
+loss_value == 0.07024339586496353
+
+ Batch 291 finished 
+
+loss_value == 0.07295437157154083
+
+ Batch 292 finished 
+
+loss_value == 0.06906071305274963
+
+ Batch 293 finished 
+
+loss_value == 0.0738784670829773
+
+ Batch 294 finished 
+
+loss_value == 0.07394842803478241
+
+ Batch 295 finished 
+
+loss_value == 0.06624814867973328
+
+ Batch 296 finished 
+
+loss_value == 0.06722676753997803
+
+ Batch 297 finished 
+
+loss_value == 0.06480646878480911
+
+ Batch 298 finished 
+
+loss_value == 0.08190895617008209
+
+ Batch 299 finished 
+
+loss_value == 0.06662920117378235
+
+ Batch 300 finished 
+
+loss_value == 0.0704311653971672
+
+ Batch 301 finished 
+
+loss_value == 0.07249999046325684
+
+ Batch 302 finished 
+
+loss_value == 0.07160888612270355
+
+ Batch 303 finished 
+
+loss_value == 0.07501957565546036
+
+ Batch 304 finished 
+
+loss_value == 0.07359890639781952
+
+ Batch 305 finished 
+
+loss_value == 0.07190106064081192
+
+ Batch 306 finished 
+
+loss_value == 0.07283172756433487
+
+ Batch 307 finished 
+
+loss_value == 0.06246930733323097
+
+ Batch 308 finished 
+
+loss_value == 0.06654388457536697
+
+ Batch 309 finished 
+
+loss_value == 0.06410717964172363
+
+ Batch 310 finished 
+
+loss_value == 0.06932581216096878
+
+ Batch 311 finished 
+
+loss_value == 0.06635869294404984
+
+ Batch 312 finished 
+
+loss_value == 0.07060231268405914
+
+ Batch 313 finished 
+
+loss_value == 0.07695916295051575
+
+ Batch 314 finished 
+
+loss_value == 0.07068642973899841
+
+ Batch 315 finished 
+
+loss_value == 0.07501877099275589
+
+ Batch 316 finished 
+
+loss_value == 0.06846462190151215
+
+ Batch 317 finished 
+
+loss_value == 0.0716370940208435
+
+ Batch 318 finished 
+
+loss_value == 0.07219703495502472
+
+ Batch 319 finished 
+
+loss_value == 0.07006630301475525
+
+ Batch 320 finished 
+
+loss_value == 0.07212521880865097
+
+ Batch 321 finished 
+
+loss_value == 0.07161680608987808
+
+ Batch 322 finished 
+
+loss_value == 0.06803163886070251
+
+ Batch 323 finished 
+
+loss_value == 0.07777850329875946
+
+ Batch 324 finished 
+
+loss_value == 0.0635172575712204
+
+ Batch 325 finished 
+
+loss_value == 0.06949755549430847
+
+ Batch 326 finished 
+
+loss_value == 0.07197040319442749
+
+ Batch 327 finished 
+
+loss_value == 0.07435830682516098
+
+ Batch 328 finished 
+
+loss_value == 0.07353159785270691
+
+ Batch 329 finished 
+
+loss_value == 0.0639185905456543
+
+ Batch 330 finished 
+
+loss_value == 0.06956373155117035
+
+ Batch 331 finished 
+
+loss_value == 0.06843763589859009
+
+ Batch 332 finished 
+
+loss_value == 0.07172871381044388
+
+ Batch 333 finished 
+
+loss_value == 0.06862472742795944
+
+ Batch 334 finished 
+
+loss_value == 0.06855926662683487
+
+ Batch 335 finished 
+
+loss_value == 0.07966437935829163
+
+ Batch 336 finished 
+
+loss_value == 0.07538644969463348
+
+ Batch 337 finished 
+
+loss_value == 0.07417565584182739
+
+ Batch 338 finished 
+
+loss_value == 0.07102010399103165
+
+ Batch 339 finished 
+
+loss_value == 0.07181578874588013
+
+ Batch 340 finished 
+
+loss_value == 0.06755246222019196
+
+ Batch 341 finished 
+
+loss_value == 0.07509909570217133
+
+ Batch 342 finished 
+
+loss_value == 0.06388498842716217
+
+ Batch 343 finished 
+
+loss_value == 0.07486183941364288
+
+ Batch 344 finished 
+
+loss_value == 0.07645390927791595
+
+ Batch 345 finished 
+
+loss_value == 0.06894664466381073
+
+ Batch 346 finished 
+
+loss_value == 0.07214248925447464
+
+ Batch 347 finished 
+
+loss_value == 0.06489987671375275
+
+ Batch 348 finished 
+
+loss_value == 0.0726681724190712
+
+ Batch 349 finished 
+
+loss_value == 0.07010053843259811
+
+ Batch 350 finished 
+
+loss_value == 0.06683114916086197
+
+ Batch 351 finished 
+
+loss_value == 0.0687289834022522
+
+ Batch 352 finished 
+
+loss_value == 0.06611514091491699
+
+ Batch 353 finished 
+
+loss_value == 0.06504198908805847
+
+ Batch 354 finished 
+
+loss_value == 0.06538208574056625
+
+ Batch 355 finished 
+
+loss_value == 0.07190234214067459
+
+ Batch 356 finished 
+
+loss_value == 0.07458057999610901
+
+ Batch 357 finished 
+
+loss_value == 0.058905571699142456
+
+ Batch 358 finished 
+
+loss_value == 0.07272447645664215
+
+ Batch 359 finished 
+
+loss_value == 0.0676412582397461
+
+ Batch 360 finished 
+
+loss_value == 0.07151482999324799
+
+ Batch 361 finished 
+
+loss_value == 0.06579331308603287
+
+ Batch 362 finished 
+
+loss_value == 0.06634369492530823
+
+ Batch 363 finished 
+
+loss_value == 0.06266405433416367
+
+ Batch 364 finished 
+
+loss_value == 0.06752938032150269
+
+ Batch 365 finished 
+
+loss_value == 0.06241835281252861
+
+ Batch 366 finished 
+
+loss_value == 0.06439054012298584
+
+ Batch 367 finished 
+
+loss_value == 0.06704515218734741
+
+ Batch 368 finished 
+
+loss_value == 0.06308192014694214
+
+ Batch 369 finished 
+
+loss_value == 0.07580601423978806
+
+ Batch 370 finished 
+
+loss_value == 0.06290166079998016
+
+ Batch 371 finished 
+
+loss_value == 0.07021079957485199
+
+ Batch 372 finished 
+
+loss_value == 0.07261842489242554
+
+ Batch 373 finished 
+
+loss_value == 0.07312581688165665
+
+ Batch 374 finished 
+
+loss_value == 0.07117041945457458
+
+ Batch 375 finished 
+
+loss_value == 0.06869541108608246
+
+ Batch 376 finished 
+
+loss_value == 0.06910719722509384
+
+ Batch 377 finished 
+
+loss_value == 0.07201769948005676
+
+ Batch 378 finished 
+
+loss_value == 0.07497502863407135
+
+ Batch 379 finished 
+
+loss_value == 0.06370146572589874
+
+ Batch 380 finished 
+
+loss_value == 0.07066651433706284
+
+ Batch 381 finished 
+
+loss_value == 0.07596535235643387
+
+ Batch 382 finished 
+
+loss_value == 0.07584541290998459
+
+ Batch 383 finished 
+
+loss_value == 0.06742765009403229
+
+ Batch 384 finished 
+
+loss_value == 0.0629594624042511
+
+ Batch 385 finished 
+
+loss_value == 0.06470584869384766
+
+ Batch 386 finished 
+
+loss_value == 0.06746872514486313
+
+ Batch 387 finished 
+
+loss_value == 0.07067693769931793
+
+ Batch 388 finished 
+
+loss_value == 0.06673949956893921
+
+ Batch 389 finished 
+
+loss_value == 0.06535954773426056
+
+ Batch 390 finished 
+
+loss_value == 0.07115644961595535
+
+ Batch 391 finished 
+
+loss_value == 0.06072976440191269
+
+ Batch 392 finished 
+
+loss_value == 0.072442427277565
+
+ Batch 393 finished 
+
+loss_value == 0.07011762261390686
+
+ Batch 394 finished 
+
+loss_value == 0.06716105341911316
+
+ Batch 395 finished 
+
+loss_value == 0.06635485589504242
+
+ Batch 396 finished 
+
+loss_value == 0.07110734283924103
+
+ Batch 397 finished 
+
+loss_value == 0.0683351531624794
+
+ Batch 398 finished 
+
+loss_value == 0.06737564504146576
+
+ Batch 399 finished 
+
+loss_value == 0.06896693259477615
+
+ Batch 400 finished 
+
+loss_value == 0.06812062114477158
+
+ Batch 401 finished 
+
+loss_value == 0.07038984447717667
+
+ Batch 402 finished 
+
+loss_value == 0.0715736597776413
+
+ Batch 403 finished 
+
+loss_value == 0.06520114839076996
+
+ Batch 404 finished 
+
+loss_value == 0.06677617132663727
+
+ Batch 405 finished 
+
+loss_value == 0.07154718041419983
+
+ Batch 406 finished 
+
+loss_value == 0.06789282709360123
+
+ Batch 407 finished 
+
+loss_value == 0.06924993544816971
+
+ Batch 408 finished 
+
+loss_value == 0.06882823258638382
+
+ Batch 409 finished 
+
+loss_value == 0.06609167158603668
+
+ Batch 410 finished 
+
+loss_value == 0.06489405035972595
+
+ Batch 411 finished 
+
+loss_value == 0.06980300694704056
+
+ Batch 412 finished 
+
+loss_value == 0.06751703470945358
+
+ Batch 413 finished 
+
+loss_value == 0.0641660988330841
+
+ Batch 414 finished 
+
+loss_value == 0.06034183129668236
+
+ Batch 415 finished 
+
+loss_value == 0.06609328091144562
+
+ Batch 416 finished 
+
+loss_value == 0.06422412395477295
+
+ Batch 417 finished 
+
+loss_value == 0.06887198239564896
+
+ Batch 418 finished 
+
+loss_value == 0.06845873594284058
+
+ Batch 419 finished 
+
+loss_value == 0.06932609528303146
+
+ Batch 420 finished 
+
+loss_value == 0.06695611029863358
+
+ Batch 421 finished 
+
+loss_value == 0.0661572813987732
+
+ Batch 422 finished 
+
+loss_value == 0.06464475393295288
+
+ Batch 423 finished 
+
+loss_value == 0.06473678350448608
+
+ Batch 424 finished 
+
+loss_value == 0.07038433849811554
+
+ Batch 425 finished 
+
+loss_value == 0.06888441741466522
+
+ Batch 426 finished 
+
+loss_value == 0.06364001333713531
+
+ Batch 427 finished 
+
+loss_value == 0.06588371098041534
+
+ Batch 428 finished 
+
+loss_value == 0.0660381093621254
+
+ Batch 429 finished 
+
+loss_value == 0.06869444251060486
+
+ Batch 430 finished 
+
+loss_value == 0.07324853539466858
+
+ Batch 431 finished 
+
+loss_value == 0.07514864951372147
+
+ Batch 432 finished 
+
+loss_value == 0.06358761340379715
+
+ Batch 433 finished 
+
+loss_value == 0.06530722975730896
+
+ Batch 434 finished 
+
+loss_value == 0.06432794034481049
+
+ Batch 435 finished 
+
+loss_value == 0.06533358991146088
+
+ Batch 436 finished 
+
+loss_value == 0.07077009230852127
+
+ Batch 437 finished 
+
+loss_value == 0.0734962671995163
+
+ Batch 438 finished 
+
+loss_value == 0.06804152578115463
+
+ Batch 439 finished 
+
+loss_value == 0.06769103556871414
+
+ Batch 440 finished 
+
+loss_value == 0.06586730480194092
+
+ Batch 441 finished 
+
+loss_value == 0.06695295125246048
+
+ Batch 442 finished 
+
+loss_value == 0.07051981985569
+
+ Batch 443 finished 
+
+loss_value == 0.05842113494873047
+
+ Batch 444 finished 
+
+loss_value == 0.06807906925678253
+
+ Batch 445 finished 
+
+loss_value == 0.06823625415563583
+
+ Batch 446 finished 
+
+loss_value == 0.07266978174448013
+
+ Batch 447 finished 
+
+loss_value == 0.06728047132492065
+
+ Batch 448 finished 
+
+loss_value == 0.0686740055680275
+
+ Batch 449 finished 
+
+loss_value == 0.06805011630058289
+
+ Batch 450 finished 
+
+loss_value == 0.06396080553531647
+
+ Batch 451 finished 
+
+loss_value == 0.06504703313112259
+
+ Batch 452 finished 
+
+loss_value == 0.0673404410481453
+
+ Batch 453 finished 
+
+loss_value == 0.07285873591899872
+
+ Batch 454 finished 
+
+loss_value == 0.06668807566165924
+
+ Batch 455 finished 
+
+loss_value == 0.06812980771064758
+
+ Batch 456 finished 
+
+loss_value == 0.070625901222229
+
+ Batch 457 finished 
+
+loss_value == 0.0656023845076561
+
+ Batch 458 finished 
+
+loss_value == 0.061417482793331146
+
+ Batch 459 finished 
+
+loss_value == 0.0688428282737732
+
+ Batch 460 finished 
+
+loss_value == 0.07192185521125793
+
+ Batch 461 finished 
+
+loss_value == 0.06936128437519073
+
+ Batch 462 finished 
+
+loss_value == 0.06747213006019592
+
+ Batch 463 finished 
+
+loss_value == 0.07197482883930206
+
+ Batch 464 finished 
+
+loss_value == 0.06817186623811722
+
+ Batch 465 finished 
+
+loss_value == 0.07151210308074951
+
+ Batch 466 finished 
+
+loss_value == 0.07185666263103485
+
+ Batch 467 finished 
+
+loss_value == 0.06366628408432007
+
+ Batch 468 finished 
+
+loss_value == 0.07145203649997711
+
+ Batch 469 finished 
+
+loss_value == 0.07096634060144424
+
+ Batch 470 finished 
+
+loss_value == 0.06495290994644165
+
+ Batch 471 finished 
+
+loss_value == 0.0681104063987732
+
+ Batch 472 finished 
+
+loss_value == 0.06595165282487869
+
+ Batch 473 finished 
+
+loss_value == 0.07404109835624695
+
+ Batch 474 finished 
+
+loss_value == 0.0664154440164566
+
+ Batch 475 finished 
+
+loss_value == 0.0657891258597374
+
+ Batch 476 finished 
+
+loss_value == 0.0650363564491272
+
+ Batch 477 finished 
+
+loss_value == 0.06596272438764572
+
+ Batch 478 finished 
+
+loss_value == 0.06428761780261993
+
+ Batch 479 finished 
+
+loss_value == 0.0649230033159256
+
+ Batch 480 finished 
+
+loss_value == 0.06899049878120422
+
+ Batch 481 finished 
+
+loss_value == 0.0655624270439148
+
+ Batch 482 finished 
+
+loss_value == 0.06824901700019836
+
+ Batch 483 finished 
+
+loss_value == 0.06735303997993469
+
+ Batch 484 finished 
+
+loss_value == 0.06467607617378235
+
+ Batch 485 finished 
+
+loss_value == 0.06706201285123825
+
+ Batch 486 finished 
+
+loss_value == 0.0624929815530777
+
+ Batch 487 finished 
+
+loss_value == 0.06304319947957993
+
+ Batch 488 finished 
+
+loss_value == 0.06775113940238953
+
+ Batch 489 finished 
+
+loss_value == 0.06258110702037811
+
+ Batch 490 finished 
+
+loss_value == 0.06801403313875198
+
+ Batch 491 finished 
+
+loss_value == 0.06025227904319763
+
+ Batch 492 finished 
+
+loss_value == 0.06849193572998047
+
+ Batch 493 finished 
+
+loss_value == 0.0677814856171608
+
+ Batch 494 finished 
+
+loss_value == 0.06648360937833786
+
+ Batch 495 finished 
+
+loss_value == 0.0663391649723053
+
+ Batch 496 finished 
+
+loss_value == 0.06793329119682312
+
+ Batch 497 finished 
+
+loss_value == 0.07299990206956863
+
+ Batch 498 finished 
+
+loss_value == 0.0719442144036293
+
+ Batch 499 finished 
+
+loss_value == 0.07262135297060013
+
+ Batch 500 finished 
+
+loss_value == 0.06404860317707062
+
+ Batch 501 finished 
+
+loss_value == 0.06228218972682953
+
+ Batch 502 finished 
+
+loss_value == 0.06557597219944
+
+ Batch 503 finished 
+
+loss_value == 0.06663075089454651
+
+ Batch 504 finished 
+
+loss_value == 0.07186339795589447
+
+ Batch 505 finished 
+
+loss_value == 0.07067592442035675
+
+ Batch 506 finished 
+
+loss_value == 0.06743572652339935
+
+ Batch 507 finished 
+
+loss_value == 0.06542643904685974
+
+ Batch 508 finished 
+
+loss_value == 0.06085184961557388
+
+ Batch 509 finished 
+
+loss_value == 0.06109584867954254
+
+ Batch 510 finished 
+
+loss_value == 0.06512664258480072
+
+ Batch 511 finished 
+
+loss_value == 0.06709878146648407
+
+ Batch 512 finished 
+
+loss_value == 0.05990771949291229
+
+ Batch 513 finished 
+
+loss_value == 0.059398166835308075
+
+ Batch 514 finished 
+
+loss_value == 0.06857180595397949
+
+ Batch 515 finished 
+
+loss_value == 0.06317415833473206
+
+ Batch 516 finished 
+
+loss_value == 0.06926269829273224
+
+ Batch 517 finished 
+
+loss_value == 0.06418772041797638
+
+ Batch 518 finished 
+
+loss_value == 0.06394707411527634
+
+ Batch 519 finished 
+
+loss_value == 0.06398943066596985
+
+ Batch 520 finished 
+
+loss_value == 0.06701207906007767
+
+ Batch 521 finished 
+
+loss_value == 0.06623464822769165
+
+ Batch 522 finished 
+
+loss_value == 0.07039952278137207
+
+ Batch 523 finished 
+
+loss_value == 0.06884746253490448
+
+ Batch 524 finished 
+
+loss_value == 0.06204858794808388
+
+ Batch 525 finished 
+
+loss_value == 0.06361158192157745
+
+ Batch 526 finished 
+
+loss_value == 0.06552115082740784
+
+ Batch 527 finished 
+
+loss_value == 0.059977490454912186
+
+ Batch 528 finished 
+
+loss_value == 0.06258753687143326
+
+ Batch 529 finished 
+
+loss_value == 0.058390721678733826
+
+ Batch 530 finished 
+
+loss_value == 0.06723669916391373
+
+ Batch 531 finished 
+
+loss_value == 0.06791973114013672
+
+ Batch 532 finished 
+
+loss_value == 0.05840853974223137
+
+ Batch 533 finished 
+
+loss_value == 0.06684693694114685
+
+ Batch 534 finished 
+
+loss_value == 0.06449558585882187
+
+ Batch 535 finished 
+
+loss_value == 0.06686587631702423
+
+ Batch 536 finished 
+
+loss_value == 0.0655510202050209
+
+ Batch 537 finished 
+
+loss_value == 0.06585345417261124
+
+ Batch 538 finished 
+
+loss_value == 0.06350172311067581
+
+ Batch 539 finished 
+
+loss_value == 0.06155776605010033
+
+ Batch 540 finished 
+
+loss_value == 0.07109372317790985
+
+ Batch 541 finished 
+
+loss_value == 0.06720051169395447
+
+ Batch 542 finished 
+
+loss_value == 0.07010158896446228
+
+ Batch 543 finished 
+
+loss_value == 0.06626342982053757
+
+ Batch 544 finished 
+
+loss_value == 0.06171056255698204
+
+ Batch 545 finished 
+
+loss_value == 0.07125826179981232
+
+ Batch 546 finished 
+
+loss_value == 0.06715982407331467
+
+ Batch 547 finished 
+
+loss_value == 0.06271412968635559
+
+ Batch 548 finished 
+
+loss_value == 0.0685366615653038
+
+ Batch 549 finished 
+
+loss_value == 0.06458690762519836
+
+ Batch 550 finished 
+
+loss_value == 0.06099756062030792
+
+ Batch 551 finished 
+
+loss_value == 0.07182832062244415
+
+ Batch 552 finished 
+
+loss_value == 0.06268153339624405
+
+ Batch 553 finished 
+
+loss_value == 0.05916595831513405
+
+ Batch 554 finished 
+
+loss_value == 0.0646020770072937
+
+ Batch 555 finished 
+
+loss_value == 0.05832131952047348
+
+ Batch 556 finished 
+
+loss_value == 0.07364830374717712
+
+ Batch 557 finished 
+
+loss_value == 0.07008005678653717
+
+ Batch 558 finished 
+
+loss_value == 0.06518758833408356
+
+ Batch 559 finished 
+
+loss_value == 0.06792756915092468
+
+ Batch 560 finished 
+
+loss_value == 0.061942487955093384
+
+ Batch 561 finished 
+
+loss_value == 0.06017143279314041
+
+ Batch 562 finished 
+
+
+ Epoch 0 finished 
+
