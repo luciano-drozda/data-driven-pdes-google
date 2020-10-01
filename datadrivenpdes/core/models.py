@@ -59,7 +59,7 @@ class TimeStepModel(tf.keras.Model):
       equation: equations.Equation,
       grid: grids.Grid,
       num_time_steps: int = 1,
-      target: Optional[str] = None,
+      target: List[str] = None,
       name: str = 'time_step_model',
   ):
     """Initialize a time-step model."""
@@ -72,8 +72,8 @@ class TimeStepModel(tf.keras.Model):
     self.grid = grid
     self.num_time_steps = num_time_steps
 
-    if target is None and len(equation.evolving_keys) == 1:
-      (target,) = equation.evolving_keys
+    if target is None:
+      target = sorted(list(equation.evolving_keys))
     self.target = target
 
   def load_data(
@@ -95,7 +95,7 @@ class TimeStepModel(tf.keras.Model):
     dataset = dataset.map(replace_state_keys_with_names)
     return dataset
 
-  def call(self, inputs: Dict[str, tf.Tensor]) -> tf.Tensor:
+  def call(self, inputs: Dict[str, tf.Tensor]) -> List[tf.Tensor]:
     """Predict the target state after multiple time-steps.
 
     Args:
@@ -114,12 +114,18 @@ class TimeStepModel(tf.keras.Model):
     def advance(evolving_state, _):
       return self.take_time_step({**evolving_state, **constant_state})
 
+    factor = 1
+    if self.equation.CONTINUOUS_EQUATION_NAME == 'euler' and self.equation.DISCRETIZATION_NAME == 'finite_volume':
+      factor = 3
+
     advanced = tf.scan(
-        advance, tf.range(self.num_time_steps), initializer=evolving_inputs)
+        advance, tf.range(factor * self.num_time_steps), initializer=evolving_inputs)
     advanced = tensor_ops.moveaxis(advanced, source=0, destination=1)
-    # TODO(shoyer): support multiple targets, once keras does.
-    # https://github.com/tensorflow/tensorflow/issues/25299
-    return advanced[self.target]
+    
+    if self.equation.CONTINUOUS_EQUATION_NAME == 'euler' and self.equation.DISCRETIZATION_NAME == 'finite_volume':
+      return [advanced[target_str][:, 2::3] for target_str in self.target]
+    else:
+      return [advanced[target_str] for target_str in self.target]
 
   def time_derivative(
       self, state: Mapping[str, tf.Tensor]) -> Dict[str, tf.Tensor]:
@@ -175,7 +181,17 @@ class SpatialDerivativeModel(TimeStepModel):
       self, state: Mapping[str, tf.Tensor]) -> Dict[str, tf.Tensor]:
     """See base class."""
     inputs = self.spatial_derivatives(state)
+    
+    if self.equation.CONTINUOUS_EQUATION_NAME == 'euler' and self.equation.DISCRETIZATION_NAME == 'finite_volume':
+      rk_step = self.equation.get_runge_kutta_step()
+      if rk_step == 0:
+        self.equation.set_last_integer_state(state)
+      
     outputs = self.equation.take_time_step(self.grid, **inputs)
+    
+    if self.equation.CONTINUOUS_EQUATION_NAME == 'euler' and self.equation.DISCRETIZATION_NAME == 'finite_volume':
+      self.equation.set_runge_kutta_step((rk_step + 1) % 3)
+    
     return outputs
 
 
@@ -531,6 +547,21 @@ def conv2d_stack(num_outputs, num_layers=5, filters=32, kernel_size=5,
   return model
 
 
+def conv2d_stack_non_periodic(num_outputs, num_layers=5, filters=32, 
+                              kernel_size=5, activation='relu', **kwargs):
+  """Create a sequence of Conv2D layers."""
+  model = tf.keras.Sequential()
+  model.add(tf.keras.layers.Lambda(stack_dict))
+  for _ in range(num_layers - 1):
+    layer = tf.keras.layers.Conv2D(
+        filters, kernel_size, activation=activation, padding='same', **kwargs)
+    model.add(layer)
+  model.add(
+    tf.keras.layers.Conv2D(num_outputs, kernel_size, padding='same', **kwargs)
+  )
+  return model
+
+
 def _rescale_01(array, axis):
   array_max = tf.reduce_max(array, axis, keep_dims=True)
   array_min = tf.reduce_min(array, axis, keep_dims=True)
@@ -540,14 +571,28 @@ def _rescale_01(array, axis):
 class RescaledConv2DStack(tf.keras.Model):
   """Rescale input fields to stabilize PDE integration."""
 
-  def __init__(self, num_outputs: int, scaled_keys: Set[str], **kwargs):
+  def __init__(self, num_outputs: int, **kwargs):
     super().__init__()
     self.original_model = conv2d_stack(num_outputs, **kwargs)
-    self.scaled_keys = scaled_keys
 
   def call(self, inputs):
     inputs = inputs.copy()
-    for key in self.scaled_keys:
+    for key in inputs.keys():
+      inputs[key] = _rescale_01(inputs[key], axis=(-1, -2))
+
+    return self.original_model(inputs)
+
+
+class RescaledConv2DStackNonPeriodic(tf.keras.Model):
+  """Rescale input fields to stabilize PDE integration (using conv2d_stack_non_periodic)."""
+
+  def __init__(self, num_outputs: int, **kwargs):
+    super().__init__()
+    self.original_model = conv2d_stack_non_periodic(num_outputs, **kwargs)
+
+  def call(self, inputs):
+    inputs = inputs.copy()
+    for key in inputs.keys():
       inputs[key] = _rescale_01(inputs[key], axis=(-1, -2))
 
     return self.original_model(inputs)
@@ -567,6 +612,53 @@ class ClippedConv2DStack(tf.keras.Model):
       inputs[key] = tf.clip_by_value(inputs[key], 1e-3, 1.0 - 1e-3)
 
     return self.original_model(inputs)
+
+
+def block(filters, kernel_size, activation, final_activation=True):
+  def f(x):
+    # first Conv2DPeriodic (with post-activation)
+    h = Conv2DPeriodic(filters, kernel_size, activation=activation)(x)
+    # second Conv2DPeriodic
+    h = Conv2DPeriodic(filters, kernel_size)(h)
+    # skip connection
+    h = tf.keras.layers.add([h, x])
+    # last activation
+    h = tf.keras.layers.Activation(activation)(h)
+    return h
+  return f
+
+def conv2d_resnet(num_outputs, num_layers=5, filters=32, kernel_size=5,
+                  activation='relu', **kwargs):
+  # use Keras functional API
+  # input data
+  # input_tensor = tf.keras.layers.Input((32, 32, 4)) # for Euler
+  input_tensor = tf.keras.layers.Input((32, 32, 3)) # for Advection
+  # first Conv2DPeriodic to transform data for the loop of residual blocks
+  x = Conv2DPeriodic(filters, kernel_size, activation=activation, **kwargs)(input_tensor)
+  # compute number of residual blocks
+  num_blocks = (num_layers - 2) // 2
+  for _ in range(num_blocks):
+    x = block(filters, kernel_size, activation)(x)
+  # last Conv2DPeriodic to transform data in the right shape 
+  # for the output layers
+  x = Conv2DPeriodic(num_outputs, kernel_size, **kwargs)(x)
+
+  return tf.keras.Model(inputs=input_tensor, outputs=x)
+
+
+class Conv2DResNet(tf.keras.Model):
+  """Create a sequence of Conv2DPeriodic layers in the form of a ResNet, 
+    suitable for very deep neural nets."""
+
+  def __init__(self, num_outputs: int, **kwargs):
+    super().__init__()
+    self.original_model = conv2d_resnet(num_outputs, **kwargs)
+
+  def call(self, inputs):
+    inputs = inputs.copy()
+    for key in inputs.keys():
+      inputs[key] = _rescale_01(inputs[key], axis=(-1, -2))
+    return self.original_model(stack_dict(inputs))
 
 
 class PseudoLinearModel(SpatialDerivativeModel):
