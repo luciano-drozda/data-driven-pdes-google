@@ -5,7 +5,7 @@
 
 import numpy as np
 import os, sys
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '3'
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 import tensorflow as tf
@@ -34,18 +34,8 @@ fine_grid = grids.Grid.from_period(size=fine_resolution, length=length)
 coarse_grid = grids.Grid.from_period(size=coarse_resolution, length=length)
 xx, yy = coarse_grid.get_mesh()
 
-# Define initial state to integrate
-seed = 600000
-initial_state = equation_nn.random_state_double_shear_layer(fine_grid, seed=seed)
-
-# Regrid `initial_state` to coarse resolution
-initial_state_coarse = \
-  tensor_ops.regrid(
-    initial_state, key_defs, fine_grid, coarse_grid
-  )
-
 # How many integration time-steps?
-num_time_steps = 1001
+num_time_steps = 101
 time_steps = np.arange(num_time_steps)
 rk_time_steps = np.arange(3 * num_time_steps)
 
@@ -77,9 +67,19 @@ model_nn = models.PseudoLinearModel(
 print('model_nn.learned_keys =',model_nn.learned_keys)
 print('model_nn.fixed_keys =',model_nn.fixed_keys)
 
+# Define initial state to integrate
+seed = 600000
+initial_state = equation_nn.random_state_double_shear_layer(fine_grid, seed=seed)
+
+# Regrid `initial_state` to coarse resolution
+initial_state_coarse = \
+  tensor_ops.regrid(
+    initial_state, key_defs, fine_grid, coarse_grid
+  )
+
 equations.save_plot_state(initial_state_coarse, 'initial_nn', xx, yy) # plot initial state
 initial_state_nn = \
-  {k: tf.expand_dims(v, 0) for k, v in initial_state.items()}
+  {k: tf.expand_dims(v, 0) for k, v in initial_state_coarse.items()}
 # Load pretrained weights on model_nn
 model_utils.load_weights(model_nn, f'./weights_trained_{NUM_TIME_STEPS}.h5')
 
