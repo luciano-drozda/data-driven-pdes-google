@@ -194,10 +194,10 @@ class _EulerBase(equations.Equation):
     # Set inner density and x_velocity
     factor_density = 1.2 # must be greater than unity (proper to flow's physics)
     factor_velocity = 0.1 # must be lower than unity (for numerical stability)
-    if seed is not None:
-      random = np.random.RandomState(seed=(n_waves + 1) * seed)
-      factor_density = random.uniform(low=1., high=2.)
-      factor_velocity = random.uniform(low=0.1, high=0.5)
+    # if seed is not None:
+    #   random = np.random.RandomState(seed=(n_waves + 1) * seed)
+    #   factor_density = random.uniform(low=1., high=2.)
+    #   factor_velocity = random.uniform(low=0.1, high=0.5)
     offset = grid.size_y // 4
     density_0[:, offset:-offset - 1] = factor_density * aux_density
     x_velocity_0[:, offset:-offset - 1] = - factor_velocity * aux_velocity
