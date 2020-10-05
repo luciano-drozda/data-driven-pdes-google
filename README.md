@@ -25,8 +25,8 @@ Installation is most easily done using pip.
   clone the repo and install:
 ```bash
 cd <your directory>
-git clone git+https://github.com/lucianodrozda/data-driven-pdes-google
-pip install -e data-driven-pdes
+git clone https://github.com/lucianodrozda/data-driven-pdes-google
+pip install -e data-driven-pdes-google
 ```
 
 # Usage
